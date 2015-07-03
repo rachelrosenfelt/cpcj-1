@@ -1,0 +1,110 @@
+// This is a shame stylesheet
+// Hacks and overrides appear here until they've found their right home.
+
+
+
+@media #{$D7} {
+   
+	// SETTINGS
+  body {
+    max-width:100vw;
+    // background-color:white;
+    & ::selection {
+      background: $black;
+      color:white;
+    }
+  }
+
+  #editorial_note {
+  	display:none;
+  }
+
+  // BIO
+  .team-member {
+    width:120px;
+    margin-right:20px;
+    border-radius: 4px;
+    float:left;
+    height:120px;
+    overflow:hidden;
+    margin-bottom:20px;
+    img {
+      opacity: 0.2;
+      width:100%;
+      position:relative;
+    }
+    .active img {
+      opacity:1;
+    }
+  }
+  .team-member:last-of-type{
+    margin-right:0;
+  }
+  .bio-container {
+  }
+  .group {
+
+  }
+  .bio {
+    display:none;
+    h3 {
+      display:inline-block;
+      font:14px/20px 'Times New Roman';
+    }
+    h4 {
+     font:14px/20px 'Times New Roman'; 
+    }
+  }
+  
+
+
+}
+
+@media #{$D6} {
+  
+}
+
+@media #{$D5} {
+  
+}
+
+@media #{$D4} {
+  
+}
+
+
+body {
+  background-color:$white;
+}
+
+.fb-post {
+  margin-bottom:40px;
+  width:80%;
+}
+
+.youtube {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-top:40px;
+  margin-bottom:20px;
+  iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+}
+
+.instagram-media {
+  margin:0 !important;
+  margin-bottom:80px !important;
+  margin-top:40px !important;
+}
+
+.twitter-tweet:last-of-type {
+  padding-bottom:20px;
+}
+

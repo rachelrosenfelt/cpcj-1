@@ -1,9 +1,226 @@
+
+// BODY
+
+
+
+@media #{$D7} {
+  
+  .body {
+    color:$black;
+    font: 18px/24px Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    
+    p {
+      margin:0;
+      width:100%;
+      box-sizing: border-box;
+      padding-bottom:26px;
+      display:inline-block;
+      padding-right:15px;
+    }
+    a {
+      color:$orange;
+      // font-weight: bold;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h4 {
+      // font: 18px/26px Helvetica;
+      // font-weight: bold;
+      // letter-spacing: 0.03em;
+      // // border-bottom:2px solid #0F7C82;
+      // padding-bottom:4px;
+      // color:#0F7C82;
+      // text-transform: lowercase;
+    }
+
+    h5 {
+      font:bold 16px/21px Helvetica;
+      margin-bottom: 20px;
+      color:$orange;
+      border-top:1px dotted lightgray;
+      padding-top:25px;
+
+    }
+
+    h5 + p {
+      font-size: 18px;
+      line-height: 26px;
+      margin:0;
+      padding:0;
+      a {
+        color:$black;
+      }
+    }
+
+    h6 { // interview question
+      font-size:15px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+      font-weight: 600;
+      font-family: $sans;
+      color:$black;
+      margin:0;
+      padding-bottom:26px;
+    }
+
+    .dek {
+      color:$orange;
+      font-family: $sans;
+      font-weight:700;
+      // letter-spacing: 0.02em;
+    }
+
+    .title {
+      font-size: 2em;
+      font-weight: normal;
+      line-height: 1em;
+      margin-top:0.33em;
+      margin-bottom:0.25em;
+      box-sizing: border-box;
+      // padding-right:3em;
+    }
+
+    .byline {
+    	font-size: 16px;
+      font-style: italic;
+      color:gray;
+      margin-bottom:3em;
+      & + p:first-line {
+        text-transform: uppercase;
+      }
+    }
+
+    .lede {
+      font-size: 1.1em;
+      line-height: 1.3em;
+
+    }
+
+    .pullquote {
+      width:100%;
+      font-size:24px;
+      line-height: 26px;
+      padding-top:30px;
+      font-weight: 600;
+      padding-bottom:30px;
+      color:$blue;
+      box-sizing: border-box;
+      padding-right:0;
+      // font-style: italic;
+      &:before {
+      	content:"“ ";
+      	color:gray;
+      }
+      &:after {
+      	content:" ”";
+      	color:gray;
+      }
+    }
+
+    .monospaced {
+      font-family: monospace !important;
+      font-size: 14px;
+      line-height: 18px;
+      h3 {
+        font-family: monospace !important;
+        font-size: 1.4em;
+        text-decoration: underline;
+        margin-bottom:1.2em;
+        padding-top:3em;
+      }
+      h4 {
+        margin:0;
+        padding:0;
+        padding-top:2em;
+        color:$black;
+        font-size:14px;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-family: monospace !important;
+        text-align: center;
+        line-height: 14px;
+        display:block;
+        & + p {
+          text-align: left;
+          padding:0 1em 1em 2em;
+          box-sizing: border-box
+        }
+      }
+      p {
+        padding-top:1em;
+        padding-bottom:0;
+      }
+    }
+  }  
+}
+
+
+@media #{$D6} {
+  .body {
+    font: 20px/30px Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+
+    .dek {
+      margin-top:2em;
+    }
+
+    .pullquote {
+      width:100%;
+    }
+
+    .monospaced {
+      h4 {
+        padding-right:200px;
+      }
+    }
+  }
+}
+
 @media #{$D5} {
 	.body {
 		p {
 			padding-right:400px;	
 		}
 	}
+
+  .body {
+    position:relative;
+    h4 {
+      font-size:25px;
+    }
+
+    p {
+      padding-right:280px;
+    }
+
+    sup {
+      vertical-align: baseline;
+      position:relative;
+      font-size:0.6em;
+      top:-0.45rem;
+      padding-left:0.12em;
+      padding-right:0.16rem;
+      // font-weight: bold;
+      color:$orange;
+      cursor:pointer;
+      font-family:Helvetica;
+    }
+
+    .lede {
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens:none;
+      text-align: left;
+    }
+
+  }
+
+
+
+
+
 }
 
 @media #{$D4} {

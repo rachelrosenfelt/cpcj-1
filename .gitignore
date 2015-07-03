@@ -10,6 +10,9 @@
 # Ignore the build directory
 /build
 
+# Ignore the media directory
+/source/media
+
 # Ignore cache
 /.sass-cache
 /.cache

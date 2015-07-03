@@ -7,39 +7,34 @@
 
 @media #{$D4} {
 
+  .map-container {
+    display:block;
+    position:absolute;
+    width:100vw;
+    height:100vh;
+  }
+
   .map-page {
+    position:absolute;
     padding:20px;
-    height:85vh;
+    height:100%;
     width:100vw;
     box-sizing: border-box;
     overflow:hidden;
     background-color:$white;
     cursor:grab;
   }
-
+  
   .map {
       position: relative;
       overflow:hidden;
+      display:block;
       height:100%;
       cursor:-webkit-grab;
   }
 
   .map.dragged-map {
     cursor:-webkit-grabbing;
-  }
-
-  .map-fine-print {
-    font:12px/14px Helvetica;
-    text-align: left;
-    float:left;
-    background-color:rgba(255,255,255,0.9);
-    color:#303030;
-    top:-22px;
-    width:auto;
-    display:inline-block;
-    padding:4px;
-    padding-left:6px;
-    position:relative;
   }
   
 }

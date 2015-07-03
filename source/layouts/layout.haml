@@ -24,8 +24,6 @@
       = partial 'spots'
       = image_tag "map-gray.svg", :class => "topo"
 
-    .map-fine-print
-      Map data is completely made up, but here is a funny line of text.
 
 = partial 'menu'
 = partial 'interviews/index'
@@ -33,10 +31,6 @@
 #yield.modal.body
   = yield
 
-#panorama.modal.body
-  <iframe id="google-doc-iframe" class="panorama-frame" srcdoc="" style="height: 1050px; margin: 0 auto;" align="middle" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
-
-= partial 'about'
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
@@ -48,6 +42,10 @@
     mapHandler();
     footnoteHandler();
     teamHandler();
+
+    $("#editor-note-trigger").click(function(){
+      $("#editorial_note").slideToggle();
+    });
 
     $(function() {
         $.get("https://docs.google.com/document/d/1WT1Gfk2EG_zYtcsD_6xKEqaO2NT5X1E2Va6zq42m-v8/pub?embedded=true", function(html) {

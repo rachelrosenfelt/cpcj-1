@@ -1,0 +1,35 @@
+@media #{$D7} {
+  
+  .running-head {
+    position:fixed;
+    
+    box-sizing:border-box;
+    width:100%;
+    top:0;
+    padding:10px 40px 10px 0;
+    
+    background-color:rgba($white, 0.97);
+    color:gray;
+    
+    strong {
+      color:$orange;
+    }
+  }
+
+}
+
+@media #{$D6} {
+  .running-head {
+  	padding:40px 40px 20px 0;
+  }
+}
+
+
+@media #{$D4} {
+  .running-head {
+	  width:50%;
+	  right:300px;
+	  left:initial;
+	  padding:40px 40px 10px 40px;
+  }
+}

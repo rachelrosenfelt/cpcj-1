@@ -2,7 +2,20 @@
   
   #toc {
 
-    padding-left:120px;
+    padding-left:80px;
+
+    hr {
+      margin-top:40px;
+      margin-bottom:40px;
+      margin-right: 50px;
+      border:0;
+      height:1px;
+      background-color:lightgray;
+    }
+
+    h1 {
+      font-family: $sans;
+    }
     
     h3 {
       font: 14px/26px Helvetica;
@@ -43,10 +56,11 @@
     //   THUMB 
 
     .toc-item-art {
-      width:80px;
-      height: 80px;
+      width:50px;
+      height: 50px;
       float:left;
-      left:-100px;
+      left:-70px;
+      top:14px;
       position: absolute;
 
       img {
@@ -60,10 +74,10 @@
 @media #{$D4} {
   #toc {
     .toc-item-art {
-      width:80px;
-      height: 80px;
+      width:  40px;
+      height: 40px;
       float:left;
-      left:-100px;
+      left:-60px;
       position: absolute;
 
       img {
