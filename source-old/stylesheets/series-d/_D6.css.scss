@@ -1,0 +1,24 @@
+
+@media #{$D6} {
+  .body {
+    font: 20px/30px Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+
+    .dek {
+      margin-top:2em;
+    }
+
+    .pullquote {
+      width:100%;
+    }
+
+    .monospaced {
+      h4 {
+        padding-right:200px;
+      }
+    }
+  }
+
+  // body * {
+  //   background-color:rgba(0,0,200,0.1);
+  // }
+}

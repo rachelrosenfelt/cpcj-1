@@ -1,0 +1,59 @@
+// Mobile-First Styles
+
+@media #{$D5} {
+  
+  .body {
+    position:relative;
+    h4 {
+      font-size:25px;
+    }
+
+    p {
+      padding-right:280px;
+    }
+
+    sup {
+      vertical-align: baseline;
+      position:relative;
+      font-size:0.6em;
+      top:-0.45rem;
+      padding-left:0.12em;
+      padding-right:0.16rem;
+      // font-weight: bold;
+      color:$orange;
+      cursor:pointer;
+      font-family:Helvetica;
+    }
+
+    .lede {
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens:none;
+      text-align: left;
+    }
+
+  }
+
+  // .map-page {
+  //   padding:20px;
+  //   // padding-bottom:220px;
+  //   height:100vh;
+  //   width:100vw;
+  //   box-sizing: border-box;
+  //   overflow:hidden;
+  //   background-color:$white;
+  //   cursor:grab;
+  //   display:block;
+  //   bottom:220px;
+  // }
+
+
+
+
+
+
+
+
+
+}

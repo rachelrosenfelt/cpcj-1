@@ -1,0 +1,53 @@
+// selector.scss
+// ATTN: this is an orphaned style not intended for use
+//
+// The selector file defines the idealized order and alignment
+// of scss styles. please refer to this model:
+
+.selector {
+  /* Positioning */
+  position: absolute;
+  float: left;
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  /* Display & Box Model */
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+
+  /* Color */
+  background: #000;
+  color: #fff;
+  border: 10px solid #333;
+  
+  /* Text */
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing:0.02em;
+  text-align: right;
+  text-transform: lowercase;
+  text-decoration: none;
+
+
+  /* Other */
+  cursor: pointer;
+
+  &:after {
+    /* pseudo */
+  }
+  
+  p {
+    /* elements */
+  }
+
+  .subclass {
+    /* styles */
+  }
+}

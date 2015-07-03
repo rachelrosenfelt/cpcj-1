@@ -1,0 +1,78 @@
+!!!
+%html.no-js{:lang => 'en'}
+  %head
+
+    %meta{:charset => 'utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0'}
+    
+    %title
+      = yield_content :title
+           
+    = stylesheet_link_tag "normalize", "all", "manifest"
+    = javascript_include_tag  "all"
+    = javascript_include_tag "vendor/dragscroll/dragscroll"
+    
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
+  
+  %body{:class => "#{page_classes}"}
+    #fb-root
+.controls
+
+.map-container
+  .map-page  
+    .dragscroll.map
+      = partial 'spots'
+      = image_tag "map-gray.svg", :class => "topo"
+
+    .map-fine-print
+      Map data is completely made up, but here is a funny line of text.
+
+= partial 'menu'
+= partial 'interviews/index'
+
+#yield.modal.body
+  = yield
+
+#panorama.modal.body
+  <iframe id="google-doc-iframe" class="panorama-frame" srcdoc="" style="height: 1050px; margin: 0 auto;" align="middle" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+
+= partial 'about'
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+
+:javascript
+  $(document).ready(function() {
+    yeildHandler();
+    menuHandler();
+    mapHandler();
+    footnoteHandler();
+    teamHandler();
+
+    $(function() {
+        $.get("https://docs.google.com/document/d/1WT1Gfk2EG_zYtcsD_6xKEqaO2NT5X1E2Va6zq42m-v8/pub?embedded=true", function(html) {
+            $("#google-doc-iframe").attr("srcdoc", html);
+            setTimeout(function() {
+                $("#google-doc-iframe").contents().find('a[href^="http://"]').attr("target", "_blank");
+                $("#google-doc-iframe").contents().find('a[href^="https://"]').attr("target", "_blank");
+            }, 1000);
+        });
+    });
+
+  });
+
+  $(window).load(function(){
+    assignSeriesD();
+    urlHandler();
+    landingHandler();
+    // $("#about").show();
+  });
+
+  $(window).resize(function(){
+    assignSeriesD();
+    urlHandler();
+    landingHandler();
+  });
+
+
+  

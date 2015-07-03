@@ -1,0 +1,57 @@
+
+
+Still Need:
+
+DONE:
+- Victora Taylor / Reddit (r, t)
+
+CHECK: 
+- Mark Lotto / Media/Matter (t)
+
+COPY:
+- Ben Williams / New York Magazine
+- Bill Wasik / New York Times Magazine
+- Callie Beusman / VICE Senior Editor of Vice's Broadly
+- Connie Wang / Refinery29
+- DarkMatter
+- Emily Segal / Genius
+- Guga Chacra / Globo News
+- John Herrman / The Awl
+- Keenan Duffey / Syria Direct Executive Editor of Syria Direct
+- Mitra Kaboli / The Heart
+- Nathan Jurgenson / Snapchat
+- Reihan Salam / National Review
+- Tariq Goddard / Repeater Books
+- About Page
+
+GENERAL:
+- CPCJ Oral History (r)
+- rachel's about text
+
+- The Infographic Comeback: A Visual History needs a link
+- How We Consume Media Today: A Photo Essay needs a link
+
+- Team members ... are they correct?
+- move edited by to bottom of articles
+- interview titles updated
+- process page
+- panorama doc
+- accomodate two lines in D7 for article title / running head
+- format questions and answers for guga 
+
+- menu to LOGO / BRAND only ... toggles TOC
+
+MAYBE: 
+- Arts & Illustration
+- An Interactive Topographical Media Map needs a link // MOVE TO ABOUT
+
+D7
+D6
+D5
+- no lft sticky menu, size down to the right
+- Interview questions should have same right padding as paragraphs in case of footnote
+
+D4
+- smaller team bio positions/jobs
+- team name / titles seem styled incorrectly
+- left border of menu hides scroll bar, remove

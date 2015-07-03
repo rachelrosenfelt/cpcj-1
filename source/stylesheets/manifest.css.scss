@@ -1,0 +1,71 @@
+  $D7: 'screen and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio : 2)
+'; /* includes iPhone, */
+  $D6: 'screen and (min-width: 641px)';
+  $D5: 'screen and (min-width: 822px)';
+  $D4: 'screen and (min-width: 1081px)';
+  $D3: 'screen and (min-width:1441px)';
+
+$white:#FBFFF5;
+$black:#130C06;
+$black:#383838;
+$gray:#D1D1D0;
+$green:#0D7C82;
+// $bluegreen:#43B4BC;
+$orange:#F47C29;
+$red:#91002A;
+$darkgreen:#198943;
+$blue:#383838;
+$bluegreen:#5778FF;
+$green:#383838;
+$darkorange:#c6570a;
+
+$sans:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+@import 'positions';
+@import 'menu';
+@import 'toc';
+@import 'pin';
+@import 'map';
+@import 'panorama';
+@import 'footnote';
+@import 'body';
+@import 'series-d/manifest';
+@import 'modal';
+
+body {
+  background-color:$white;
+}
+
+.fb-post {
+  margin-bottom:40px;
+  width:80%;
+}
+
+.youtube {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-top:40px;
+  margin-bottom:20px;
+  iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+}
+
+.instagram-media {
+  margin:0 !important;
+  margin-bottom:80px !important;
+  margin-top:40px !important;
+}
+
+.twitter-tweet:last-of-type {
+  padding-bottom:20px;
+}
+
+
+
