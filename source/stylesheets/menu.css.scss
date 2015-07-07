@@ -33,7 +33,7 @@
     bottom:0;
     left:0;
     padding:0;
-    
+
     box-sizing: border-box;
 
     background-color:$white;
@@ -45,9 +45,9 @@
     font-size:20px;
     letter-spacing: 0.11em;
     text-align:right;
-    
+
     a {
-        text-decoration: none;  
+        text-decoration: none;
         color:$white;
     }
     h2 {
@@ -83,7 +83,7 @@
       padding-top:2px;
       padding-bottom:2px;
       letter-spacing:0;
-    } 
+    }
     li:hover a {
       color:$orange;
     }

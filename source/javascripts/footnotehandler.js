@@ -13,11 +13,11 @@ function footnoteHandler() {
 
     if ($(footnote_id).hasClass('active')) {
       $(footnote_id).fadeOut();
-      $(footnote_id).removeClass('active');     
+      $(footnote_id).removeClass('active');
     }
     else {
       if (!$(footnote_id).hasClass('active')) {
-        $(footnote_id).fadeToggle();        
+        $(footnote_id).fadeToggle();
         $(footnote_id).addClass('active');
       }
     }

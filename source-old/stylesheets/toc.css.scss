@@ -1,5 +1,5 @@
 @media #{$D7} {
-  
+
   #toc {
     padding-left:120px;
     h3 {
@@ -10,14 +10,14 @@
     .toc-item {
       position: relative;
       border-bottom: 1px dotted whitesmoke;
-      margin-bottom:26px;
+
     }
 
     .toc-item-title {
       padding:0;
       margin:0;
       font: italic 21px/26px Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-      
+
       a {
         color:$black;
       }

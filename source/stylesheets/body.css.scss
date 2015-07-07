@@ -4,11 +4,11 @@
 
 
 @media #{$D7} {
-  
+
   .body {
     color:$black;
     font: 18px/24px Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-    
+
     p {
       margin:0;
       width:100%;
@@ -37,9 +37,7 @@
 
     h5 {
       font:bold 16px/21px Helvetica;
-      margin-bottom: 20px;
-      color:$orange;
-      border-top:1px dotted lightgray;
+      color:$black;
       padding-top:25px;
 
     }
@@ -153,7 +151,7 @@
         padding-bottom:0;
       }
     }
-  }  
+  }
 }
 
 
@@ -180,7 +178,7 @@
 @media #{$D5} {
 	.body {
 		p {
-			padding-right:400px;	
+			padding-right:400px;
 		}
 	}
 
@@ -227,6 +225,12 @@
   .body {
     p {
       padding-right:400px;
+    }
+    h6 {
+      padding-right:140px;
+    }
+    .pullquote {
+      padding-right:100px;
     }
   }
 }

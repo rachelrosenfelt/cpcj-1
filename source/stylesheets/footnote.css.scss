@@ -5,12 +5,12 @@
 
   .footnote {
     display:none;
-  }  
+  }
 
 }
 
 @media #{$D6} {
-  
+
 }
 
 @media #{$D5} {
@@ -46,7 +46,7 @@
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
-    user-select: none;          /* Likely future */    
+    user-select: none;          /* Likely future */
 
     div.fn-block {
       padding-top:150px;
@@ -62,7 +62,7 @@
 
       .fn-caption {
         padding-right:0;
-      }        
+      }
 
       .fn-close-button {
         display:inline-block;
@@ -85,5 +85,14 @@
 }
 
 @media #{$D4} {
-  
+  .marginal-fn.footnote {
+    width:160px;
+  }
+  .fullscreen-fn {
+    div.fn-block {
+      width:600px;
+      margin: 0 auto;
+    }
+  }
+
 }

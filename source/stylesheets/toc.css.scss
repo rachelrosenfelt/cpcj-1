@@ -1,8 +1,8 @@
 @media #{$D7} {
-  
-  #toc {
 
+  #toc {
     padding-left:80px;
+    padding-top:40px;
 
     hr {
       margin-top:40px;
@@ -15,36 +15,53 @@
 
     h1 {
       font-family: $sans;
+      font-size: 28px;
+      line-height: 30px;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
-    
+
+    h2 {
+      font-family: $sans;
+      font-size: 18px;
+      color:gray;
+      line-height: 20px;      
+      padding:0;
+      padding-bottom: 10px;
+      margin:0;
+    }
+
     h3 {
       font: 14px/26px Helvetica;
       color:$darkorange;
     }
 
-    .toc-item {
-      position: relative;
-      border-bottom: 1px dotted whitesmoke;
-      margin-bottom:26px;
+    .toc-dek {
+      padding-top:40px;
     }
 
-    
-    //  ARTICLE 
-    //    TITLE 
+    .toc-item {
+      position: relative;
+      margin-bottom:10px;
+    }
+
+
+    //  ARTICLE
+    //    TITLE
 
     .toc-item-title {
       padding:0;
       margin:0;
-      font: italic 21px/26px Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-      
+      font: bold 18px/20px Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+
       a {
         color:$black;
       }
     }
 
 
-    //  ARTICLE 
-    // SUBTITLE 
+    //  ARTICLE
+    // SUBTITLE
 
     .toc-byline {
       color:gray;
@@ -52,20 +69,21 @@
     }
 
 
-    // ARTICLE 
-    //   THUMB 
+    // ARTICLE
+    //   THUMB
 
     .toc-item-art {
       width:50px;
       height: 50px;
       float:left;
-      left:-70px;
-      top:14px;
+      left:-65px;
+      top:13px;
       position: absolute;
 
       img {
         margin-top:-10px;
         width:100%;
+        box-shadow: 0 0 10px gray;
       }
     }
   }
@@ -73,6 +91,9 @@
 
 @media #{$D4} {
   #toc {
+    .toc-item {
+      padding-right:180px;
+    }
     .toc-item-art {
       width:  40px;
       height: 40px;

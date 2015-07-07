@@ -4,7 +4,7 @@
 $(window).load(function(){
   if ( $('body').is('.d7')){
       // do
-    $( '.menu ul').addClass('collapsed').toggle();  
+    $( '.menu ul').addClass('collapsed').toggle();
   }
 });
 
